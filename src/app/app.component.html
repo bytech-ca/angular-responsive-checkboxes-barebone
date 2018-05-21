@@ -1,0 +1,18 @@
+<div style="text-align:center">
+
+  <h1>Barebones Angular reactive checkboxes</h1>
+
+  <form [formGroup]="checkboxForm">
+
+    <div *ngFor="let skill of skills.controls; let i=index">
+      <input type="checkbox" [formControl]="skill" (change)="updateSkills(i)"> {{ user.skills[i].name }}
+    </div>
+
+  </form>
+
+  <div>
+    {{ this.userSelected | json }}
+  </div>
+</div>
+
+
