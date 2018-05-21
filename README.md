@@ -4,6 +4,10 @@ My attempt at isolating the code required for collecting checkbox values from an
 
 Kudos to Netanel Basal and [his tutorial](https://netbasal.com/handling-multiple-checkboxes-in-angular-forms-57eb8e846d21) on reactive Angular checkbox forms. Please visit it for additional commentary that might help you wrap your head around these concepts.
 
+# Angular community
+
+Join me on Discord in the [Angular channel](https://discord.gg/4wZtSMK).
+
 # SimpleForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
