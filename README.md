@@ -1,12 +1,14 @@
 # About this project
 
-My attempt at isolating the code required for collecting checkbox values from an Angular reactive form, with no extra code which might make these basics more difficult to understand. That said, the code does utilise FormBuilder which does remove a layer of transparency.
+Run, edit and view the code live, from this repo direct at [StackBlitz](https://stackblitz.com/github/bytech-ca/angular-responsive-checkboxes-barebone).
 
-Kudos to Netanel Basal and [his tutorial](https://netbasal.com/handling-multiple-checkboxes-in-angular-forms-57eb8e846d21) on reactive Angular checkbox forms. Please visit it for additional commentary that might help you wrap your head around these concepts.
+This is my attempt at isolating the code required for collecting checkbox values from an Angular reactive form, with no extra code which might make the basics more difficult to understand. That said, the code does utilise FormBuilder which removes a layer of transparency. If I find the time, I'll create the more verbose and transparent version without it.
+
+Kudos to Netanel Basal for [his tutorial](https://netbasal.com/handling-multiple-checkboxes-in-angular-forms-57eb8e846d21) on reactive Angular checkbox forms, as well to Bryian Tan [for his](https://www.codeproject.com/Articles/1239744/Angular-Reactive-Forms-with-Dynamic-FormArray-and). Please visit them for additional documentation and commentary that will help you wrap your head around checkboxes in Angular.
 
 # Angular community
 
-Join me on Discord in the [Angular channel](https://discord.gg/4wZtSMK).
+Join me on Discord in the [Angular channel](https://discord.gg/4wZtSMK), or visit me at [StarFox.one](https://www.starfox.one).
 
 # SimpleForm
 
