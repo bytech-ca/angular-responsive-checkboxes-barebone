@@ -9,18 +9,15 @@ import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
 
 export class AppComponent {
 
-  // Our dummy data - items where selected is true will be selected by default
+  // Our dummy data - items where selected = true will be selected by default
 
   user = { skills: [
     { name: 'Angular', selected: false },
     { name: 'React', selected: false },
     { name: 'Vue', selected: false },
-    { name: 'jQuery', selected: false },
+    { name: 'jQuery', selected: true },
     { name: 'Ember', selected: false }
   ]};
-
-  userSelected = [];    // Array of checkbox items currently selected
-  spliceValue: number;  // Used when unchecking an item - array position of item to remove
 
   checkboxForm;
 
@@ -42,28 +39,7 @@ export class AppComponent {
   }
 
   updateSkills(i) {
-
-    if (this.checkboxForm.value.skills[i]) {
-
-      // Add to selected values
-      this.userSelected.push(this.user.skills[i].name);
-
-    } else {
-
-      // Reiterate over skills to see which position item one to remove
-      for (let lc = 0; lc < this.userSelected.length; lc++) {
-
-        if (this.userSelected[lc] === this.user.skills[i].name) {
-          this.spliceValue = lc;
-        }
-
-      }
-
-      // Remove 1 value, starting the index position calculated in the for loop above
-      this.userSelected.splice(this.spliceValue, 1);
-
-    }
-
+    this.user.skills[i].selected = !this.user.skills[i].selected;
   }
 
 }
