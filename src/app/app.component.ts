@@ -23,7 +23,6 @@ export class AppComponent {
   spliceValue: number;  // Used when unchecking an item - array position of item to remove
 
   checkboxForm;
-  lc;                   // Loop counter used in updateSkill()
 
   constructor(private formBuilder: FormBuilder) {
     this.checkboxForm = this.formBuilder.group({
@@ -52,14 +51,15 @@ export class AppComponent {
     } else {
 
       // Reiterate over skills to see which position item one to remove
-      for (this.lc = 0; this.lc < this.userSelected.length; this.lc++) {
+      for (let lc = 0; lc < this.userSelected.length; lc++) {
 
-        if (this.userSelected[this.lc] === this.user.skills[i].name) {
-          this.spliceValue = this.lc;
+        if (this.userSelected[lc] === this.user.skills[i].name) {
+          this.spliceValue = lc;
         }
 
       }
 
+      // Remove 1 value, starting the index position calculated in the for loop above
       this.userSelected.splice(this.spliceValue, 1);
 
     }
