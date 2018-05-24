@@ -5,7 +5,7 @@
   <form [formGroup]="checkboxForm">
 
     <div *ngFor="let skill of skills.controls; let i=index">
-      <input type="checkbox" [formControl]="skill" (change)="updateSkills(i)"> {{ user.skills[i].name }}
+      <input type="checkbox" [formControl]="skill" (change)="toggleSkill(i)"> {{ user.skills[i].name }}
     </div>
 
   </form>
