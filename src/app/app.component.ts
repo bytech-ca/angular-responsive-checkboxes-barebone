@@ -15,7 +15,7 @@ export class AppComponent {
     { name: 'Angular', selected: false },
     { name: 'React', selected: false },
     { name: 'Vue', selected: false },
-    { name: 'jQuery', selected: true },
+    { name: 'jQuery', selected: false },
     { name: 'Ember', selected: false }
   ]};
 
@@ -32,9 +32,7 @@ export class AppComponent {
   }
 
   buildSkills() {
-    const arr = this.user.skills.map( skill => {
-      return this.formBuilder.control(skill.selected);
-    });
+    const arr = this.user.skills.map((skill) => this.formBuilder.control(skill.selected));
     return this.formBuilder.array(arr);
   }
 
